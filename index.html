@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Ygor Portes - Portfólio</title>
 </head>
 
@@ -16,7 +17,7 @@
   <nav class="navbar">
     <div class="navbar__content max-width mb-0">
       <a href="/">
-        <img src="src/images/logo.png" alt="Ygor Portes">
+        <img src="src/images/navbar/logo.png" alt="Ygor Portes">
       </a>
       <ul class="navbar__links">
         <li><a href="#header">Início</a></li>
@@ -26,7 +27,7 @@
         <li><a href="#footer">Contato</a></li>
       </ul>
       <div class="navbar__mobile">
-        <img src="src/images/menu.svg" alt="Menu" class="burguer">
+        <img src="src/images/navbar/menu.svg" alt="Menu" class="burguer">
         <ul class="mobile__links">
           <li><a href="#header">Início</a></li>
           <li><a href="#about">Sobre</a></li>
@@ -48,8 +49,8 @@
     </div>
     <div class="header__right">
       <div class="header__image">
-        <img src="src/images/ygor-portes.png" alt="Ygor Portes" class="ygor">
-        <img src="src/images/abstract.svg" alt="background" class="background">
+        <img src="src/images/header/ygor-portes.png" alt="Ygor Portes" class="ygor">
+        <img src="src/images/header/abstract.svg" alt="background" class="background">
       </div>
     </div>
   </header>
@@ -61,11 +62,11 @@
       <p>Meu nome é Ygor Portes, estou no 4º semestre de Análise e Desenvolvimento de Sistemas. No momento, estou
         direcionando meus estudos para desenvolvimento web, com foco em HTML, CSS e JavaScript.</p>
       <ul>
-        <li><a href="https://linkedin.com/in/ygorportes" target="_blank"><img src="src/images/linkedin.svg"
+        <li><a href="https://linkedin.com/in/ygorportes" target="_blank"><img src="src/images/about/linkedin.svg"
               alt="LinkedIn"></a></li>
-        <li><a href="https://github.com/ygorportes" target="_blank"><img src="src/images/github.svg" alt="GitHub"></a>
+        <li><a href="https://github.com/ygorportes" target="_blank"><img src="src/images/about/github.svg" alt="GitHub"></a>
         </li>
-        <li><a href="https://instagram.com/ygor.portes" target="_blank"><img src="src/images/instagram.svg"
+        <li><a href="https://instagram.com/ygor.portes" target="_blank"><img src="src/images/about/instagram.svg"
               alt="Instagram"></a></li>
       </ul>
     </div>
@@ -87,37 +88,37 @@
       <ul>
         <li class="skill__item">
           <div class="image-container">
-            <img src="src/images/html5.png" alt="HTML5">
+            <img src="src/images/skills/html5.png" alt="HTML5">
           </div>
           <h3>HTML</h3>
         </li>
         <li class="skill__item">
           <div class="image-container">
-            <img src="src/images/css3.png" alt="CSS3">
+            <img src="src/images/skills/css3.png" alt="CSS3">
           </div>
           <h3>CSS</h3>
         </li>
         <li class="skill__item">
           <div class="image-container">
-            <img src="src/images/javascript.png" alt="JavaScript">
+            <img src="src/images/skills/javascript.png" alt="JavaScript">
           </div>
           <h3>JavaScript</h3>
         </li>
         <li class="skill__item">
           <div class="image-container">
-            <img src="src/images/php.png" alt="PHP">
+            <img src="src/images/skills/php.png" alt="PHP">
           </div>
           <h3>PHP</h3>
         </li>
         <li class="skill__item">
           <div class="image-container">
-            <img src="src/images/mysql.png" alt="MySQL">
+            <img src="src/images/skills/mysql.png" alt="MySQL">
           </div>
           <h3>MySQL</h3>
         </li>
         <li class="skill__item">
           <div class="image-container">
-            <img src="src/images/git.png" alt="Git">
+            <img src="src/images/skills/git.png" alt="Git">
           </div>
           <h3>Git</h3>
         </li>
@@ -134,9 +135,19 @@
         do meu progresso na área de desenvolvimento web.</p>
     </div>
     <ul>
-      <li>
+      <li class="projects-list">
         <div class="image">
-          <img src="src/images/weather-forecast.png" alt="Previsão do Tempo">
+          <img src="src/images/projects/landing-page-candy-theme.png" alt="Landing Page">
+        </div>
+        <div class="projects__info">
+          <h3>Landing Page - Docerias</h3>
+          <p>Uma landing page simples e responsiva desenvolvida com HTML, CSS e JavaScript, ideal para apresentação de produtos ou serviços.</p>
+          <a href="https://ygorportes.github.io/landing-page-candy-theme/" target="_blank">Ver projeto &rarr;</a>
+        </div>
+      </li>
+      <li class="projects__reversed-list">
+        <div class="image">
+          <img src="src/images/projects/weather-forecast.png" alt="Previsão do Tempo">
         </div>
         <div class="projects__info">
           <h3>Previsão do Tempo ☀️</h3>
@@ -146,9 +157,9 @@
           <a href="https://ygorportes.github.io/weather-forecast/" target="_blank">Ver projeto &rarr;</a>
         </div>
       </li>
-      <li class="projects__reversed-list">
+      <li class="projects-list">
         <div class="image">
-          <img src="src/images/password-generator.png" alt="Gerador de Senhas">
+          <img src="src/images/projects/password-generator.png" alt="Gerador de Senhas">
         </div>
         <div class="projects__info">
           <h3>Gerador de Senhas</h3>
@@ -169,11 +180,11 @@
         <span class="mb-m">ygorsportes@gmail.com</span>
       </div>
       <ul class="mb-l">
-        <li><a href="https://linkedin.com/in/ygorportes" target="_blank"><img src="src/images/linkedin.svg"
+        <li><a href="https://linkedin.com/in/ygorportes" target="_blank"><img src="src/images/about/linkedin.svg"
               alt="LinkedIn"></a></li>
-        <li><a href="https://github.com/ygorportes" target="_blank"><img src="src/images/github.svg" alt="GitHub"></a>
+        <li><a href="https://github.com/ygorportes" target="_blank"><img src="src/images/about/github.svg" alt="GitHub"></a>
         </li>
-        <li><a href="https://instagram.com/ygor.portes" target="_blank"><img src="src/images/instagram.svg"
+        <li><a href="https://instagram.com/ygor.portes" target="_blank"><img src="src/images/about/instagram.svg"
               alt="Instagram"></a></li>
       </ul>
       <p class="footer__copyright">
