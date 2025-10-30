@@ -136,42 +136,51 @@
         registro
         do meu progresso na área de desenvolvimento web.</p>
     </div>
-    <ul>
-      <li class="projects-list">
-        <div class="image">
-          <img src="src/images/projects/landing-page-candy-theme.png" alt="Landing Page" loading="lazy">
+    <div class="projects__carousel" aria-roledescription="carousel">
+      <div class="carousel__viewport">
+        <div class="carousel__track">
+          <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 de 3">
+            <div class="image">
+              <img src="src/images/projects/landing-page-candy-theme.png" alt="Landing Page" loading="lazy">
+            </div>
+            <div class="projects__info">
+              <h3>Landing Page - Docerias</h3>
+              <p>Landing page responsiva para apresentação de produtos/serviços.</p>
+              <a href="https://ygorportes.github.io/landing-page-candy-theme/" target="_blank" rel="noopener noreferrer">Ver projeto &rarr;</a>
+            </div>
+          </article>
+          <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 de 3">
+            <div class="image">
+              <img src="src/images/projects/weather-forecast.png" alt="Previsão do Tempo" loading="lazy">
+            </div>
+            <div class="projects__info">
+              <h3>Previsão do Tempo ☀️</h3>
+              <p>Busque cidades e veja temperatura, vento e condições do clima.</p>
+              <a href="https://ygorportes.github.io/weather-forecast/" target="_blank" rel="noopener noreferrer">Ver projeto &rarr;</a>
+            </div>
+          </article>
+          <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 de 3">
+            <div class="image">
+              <img src="src/images/projects/password-generator.png" alt="Gerador de Senhas" loading="lazy">
+            </div>
+            <div class="projects__info">
+              <h3>Gerador de Senhas</h3>
+              <p>Gere senhas seguras com opções de tamanho e tipos de caracteres.</p>
+              <a href="https://ygorportes.github.io/password-generator/" target="_blank" rel="noopener noreferrer">Ver projeto &rarr;</a>
+            </div>
+          </article>
         </div>
-        <div class="projects__info">
-          <h3>Landing Page - Docerias</h3>
-          <p>Uma landing page simples e responsiva desenvolvida com HTML, CSS e JavaScript, ideal para apresentação de produtos ou serviços.</p>
-          <a href="https://ygorportes.github.io/landing-page-candy-theme/" target="_blank" rel="noopener noreferrer">Ver projeto &rarr;</a>
-        </div>
-      </li>
-      <li class="projects__reversed-list">
-        <div class="image">
-          <img src="src/images/projects/weather-forecast.png" alt="Previsão do Tempo" loading="lazy">
-        </div>
-        <div class="projects__info">
-          <h3>Previsão do Tempo ☀️</h3>
-          <p>Um projeto simples de previsão do tempo onde você pode buscar qualquer cidade e visualizar as principais
-            informações climáticas, como: Temperatura atual, temperatura máxima e mínima, umidade do ar, velocidade do
-            vento e descrição do clima com ícone ilustrativo.</p>
-          <a href="https://ygorportes.github.io/weather-forecast/" target="_blank" rel="noopener noreferrer">Ver projeto &rarr;</a>
-        </div>
-      </li>
-      <li class="projects-list">
-        <div class="image">
-          <img src="src/images/projects/password-generator.png" alt="Gerador de Senhas" loading="lazy">
-        </div>
-        <div class="projects__info">
-          <h3>Gerador de Senhas</h3>
-          <p>Este é um projeto simples de gerador de senhas desenvolvido com HTML, CSS e JavaScript. O usuário pode
-            definir o tamanho da senha (entre 4 e 128 caracteres) e escolher se deseja incluir: Letras maiúsculas,
-            letras minúsculas, números e caracteres especiais.</p>
-          <a href="https://ygorportes.github.io/password-generator/" target="_blank" rel="noopener noreferrer">Ver projeto &rarr;</a>
-        </div>
-      </li>
-    </ul>
+      </div>
+
+      <button class="carousel__control prev" aria-label="Slide anterior" data-dir="prev" tabindex="0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="carousel__control next" aria-label="Próximo slide" data-dir="next" tabindex="0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="carousel__dots" role="tablist" aria-label="Seleção de slides"></div>
+    </div>
   </section>
 
   <!-- Footer -->
