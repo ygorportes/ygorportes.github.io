@@ -7,9 +7,10 @@ header {
 }
 
 header .header__left {
-  max-width: 62rem;
+  max-width: 80rem;
   flex: 1;
 }
+
 
 header .header__left p {
   margin-top: 2rem;
@@ -57,4 +58,6 @@ header .header__right .header__image .background {
   header .header__left p {
     margin: 2rem auto 4rem;
   }
+
+  
 }

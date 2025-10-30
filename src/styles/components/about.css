@@ -1,17 +1,20 @@
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 4rem;
   scroll-margin-top: 20rem;
 }
 
 .about .about__left {
-  max-width: 40rem;
+  max-width: 100rem;
   flex: 1;
 }
 
 .about .about__left p{
-  margin: 1rem 0 2rem;
+  margin: 1rem auto 2rem;
+  max-width: 96rem;
 }
 
 .about .about__left ul{
@@ -29,7 +32,17 @@
 
 .about .about__right{
   flex: 1;
-  max-width: 66rem;
+  max-width: 100rem;
+}
+
+.about .about__right p{
+  margin: 1rem auto 2rem;
+  max-width: 96rem;
+}
+
+.about .about__left,
+.about .about__right {
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
