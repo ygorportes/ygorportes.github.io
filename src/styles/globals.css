@@ -56,7 +56,7 @@ p:not(:last-of-type),
 }
 
 .btn {
-  background-color: none;
+  background-color: transparent;
   border: none;
   outline: none;
   padding: 1rem 4rem;
