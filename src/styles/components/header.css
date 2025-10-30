@@ -14,8 +14,8 @@ header .header__left {
 
 header .header__left p {
   margin-top: 2rem;
-  margin-bottom: 4rem;
-  max-width: 50rem;
+  margin-bottom: 3rem;
+  max-width: 56rem;
 }
 
 header .header__right .header__image {
@@ -28,18 +28,19 @@ header .header__right .header__image::after {
   display: block;
   width: 100%;
   height: 100%;
-  border: 1px solid var(--tertiary-color);
+  border: 1px solid color-mix(in srgb, var(--primary-color) 36%, transparent);
   position: absolute;
   top: -1.5rem;
   right: -1.5rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
   z-index: -1;
 }
 
 header .header__right .header__image .ygor {
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
   min-width: 25rem;
   max-width: 100%;
+  box-shadow: var(--shadow-md);
 }
 
 header .header__right .header__image .background {
@@ -47,6 +48,7 @@ header .header__right .header__image .background {
   top: -4rem;
   right: -2.5rem;
   z-index: -1;
+  filter: saturate(110%) opacity(.65);
 }
 
 @media only screen and (max-width: 768px) {

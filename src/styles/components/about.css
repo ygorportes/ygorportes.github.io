@@ -10,11 +10,16 @@
 .about .about__left {
   max-width: 100rem;
   flex: 1;
+  background: var(--surface-1);
+  border: 1px solid rgba(0,0,0,0.04);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .about .about__left p{
   margin: 1rem auto 2rem;
-  max-width: 96rem;
+  max-width: 80rem;
 }
 
 .about .about__left ul{
@@ -28,7 +33,11 @@
 .about .about__left ul li a{
   display: inline-block;
   padding: 1rem;
+  border-radius: var(--radius-sm);
+  transition: transform .08s ease, background .2s ease;
 }
+.about .about__left ul li a:hover { background: var(--surface-2); }
+.about .about__left ul li a:active { transform: translateY(1px); }
 
 .about .about__right{
   flex: 1;
@@ -43,6 +52,10 @@
 .about .about__left,
 .about .about__right {
   text-align: center;
+}
+
+html[data-theme="dark"] .about .about__left ul li a img {
+  filter: invert(1) brightness(1.2) contrast(1.1);
 }
 
 @media only screen and (max-width: 768px) {

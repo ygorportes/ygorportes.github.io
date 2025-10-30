@@ -2,6 +2,30 @@ const navbar = document.querySelector(".navbar");
 const mobileNavbar = document.querySelector(".navbar__mobile");
 const button = document.querySelector(".burguer");
 const mobileLinks = document.querySelector(".mobile__links");
+const themeToggleBtn = document.getElementById("theme-toggle");
+
+(function initTheme() {
+  const root = document.documentElement;
+  const storageKey = "theme";
+  const getSystemPref = () => (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const saved = localStorage.getItem(storageKey);
+  const theme = saved || getSystemPref();
+  if (theme === 'dark') root.setAttribute('data-theme', 'dark');
+  else root.removeAttribute('data-theme');
+
+  function toggleTheme() {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      root.removeAttribute('data-theme');
+      localStorage.setItem(storageKey, 'light');
+    } else {
+      root.setAttribute('data-theme', 'dark');
+      localStorage.setItem(storageKey, 'dark');
+    }
+  }
+
+  themeToggleBtn?.addEventListener('click', toggleTheme);
+})();
 
 function toggleMobileMenu() {
   const isActive = mobileNavbar.classList.toggle("active");

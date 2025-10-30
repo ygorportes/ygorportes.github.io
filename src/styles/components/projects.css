@@ -68,12 +68,12 @@
 
 .projects .carousel__viewport::before {
   left: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--bg-color) 100%, transparent) 0%, color-mix(in srgb, var(--bg-color) 0%, transparent) 100%);
 }
 
 .projects .carousel__viewport::after {
   right: 0;
-  background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(270deg, color-mix(in srgb, var(--bg-color) 100%, transparent) 0%, color-mix(in srgb, var(--bg-color) 0%, transparent) 100%);
 }
 
 .projects .carousel__track {
@@ -91,8 +91,9 @@
   gap: 2.4rem;
   padding: 2rem;
   border-radius: 1.2rem;
-  background: #fff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background: var(--surface-1);
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: var(--shadow-sm);
   transform: scale(.94);
   opacity: .8;
   transition: transform .4s ease, opacity .4s ease, box-shadow .4s ease;
@@ -102,7 +103,7 @@
 .projects .carousel__slide.is-active {
   transform: scale(1);
   opacity: 1;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: var(--shadow-md);
 }
 
 .projects .carousel__slide .image img{
@@ -136,7 +137,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255,255,255,.6);
+  background: color-mix(in srgb, var(--surface-1) 70%, transparent);
   backdrop-filter: blur(6px);
   color: var(--primary-color);
   border: 1px solid rgba(0,0,0,.06);

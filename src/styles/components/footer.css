@@ -1,16 +1,17 @@
 footer {
-  background-color: var(--light-tertiary-color);
+  background-color: var(--surface-2);
+  border-top: 1px solid rgba(0,0,0,0.04);
 }
 
 footer .footer__content {
   text-align: center;
-  padding: 6rem 2rem 1rem;
-  max-width: 47rem;
+  padding: 6rem 2rem 1.6rem;
+  max-width: 56rem;
 }
 
 footer .footer__content .footer__contact span {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 footer .footer__content ul li {
@@ -20,9 +21,18 @@ footer .footer__content ul li {
 footer .footer__content ul a {
   display: inline-block;
   padding: 1rem;
+  border-radius: var(--radius-sm);
+  transition: background .2s ease, transform .06s ease;
 }
+footer .footer__content ul a:hover { background: var(--surface-3); }
+footer .footer__content ul a:active { transform: translateY(1px); }
 
 footer .footer__content .footer__copyright{
   font-size: 1.4rem;
+  color: color-mix(in srgb, var(--text-color) 74%, transparent);
+}
+
+html[data-theme="dark"] footer .footer__content ul li a img {
+  filter: invert(1) brightness(1.2) contrast(1.1);
 }
 
